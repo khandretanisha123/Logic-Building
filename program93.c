@@ -2,10 +2,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int Factorial(int iNo)
+long int Factorial(int iNo)
 {
     int iCnt = 0 ;
-    int iFact = 0 ;
+    long int iFact = 0 ;   //error
     
     for(iCnt = 1 , iFact = 1; iCnt<=iNo; iCnt++)
     {
@@ -19,13 +19,13 @@ int Factorial(int iNo)
 int main()
 {
     int iValue = 0;
-    int iRet = 0 ;
+    long int iRet = 0 ;
 
     printf("Enter number:\n");
     scanf("%d", &iValue);
     
     iRet=Factorial(iValue);
-    printf("Factorial is : %d\n",iRet);
+    printf("Factorial is : %ld\n",iRet);
 
     return EXIT_SUCCESS;
 }

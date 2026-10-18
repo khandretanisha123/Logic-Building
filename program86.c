@@ -2,12 +2,12 @@
 
 /*
     ---------------------------------------------------
-                operation &&
+                operation ||
     ------------------------------------------------
     Result1          Result2        Final Result
     -------------------------------------------------
-    True            True              True
-    True            False             True
+    True            True              True          //short Circuit evaluation
+    True            False             True          //short Circuit evaluation
     False           True              True
     False           False             False
     ----------------------------------------------------
