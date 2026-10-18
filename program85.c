@@ -1,10 +1,28 @@
 
+
+/*
+    ---------------------------------------------------
+                operation &&
+    ------------------------------------------------
+    Result1          Result2        Final Result
+    -------------------------------------------------
+    True            True              True 
+    True            False             false
+    False           True              False     //short Circuit evaluation
+    False           False             False     //short Circuit evaluation
+      
+    ----------------------------------------------------
+
+
+
+
+*/
 #include<stdio.h>
 #include<stdlib.h>
 
 void CheckDIvisible(int iNo)
 {
-    if(((iNo % 5)==0) && ((iNo % 3)==0))
+    if(((iNo % 5)==0) && ((iNo % 3)==0))  
     {
         printf("It is divisible \n");
     }
