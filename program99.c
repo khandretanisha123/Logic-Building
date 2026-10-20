@@ -27,3 +27,5 @@ int main()
     
     return EXIT_SUCCESS;
 }
+
+// Time complexity : O(N)
