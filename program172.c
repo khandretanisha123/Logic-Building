@@ -1,0 +1,83 @@
+//Input:  6457      Output : 5.5  
+//Input: 734        Output : 4.666667
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int CountDigits(int iNo)
+{
+    int iDigit = 0 ;
+    int iCount = 0 ;
+
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+
+    while(iNo != 0 )
+    {
+        iDigit = iNo % 10 ;
+        iCount ++;
+        iNo = iNo/10 ;
+    }
+
+    return iCount;
+}
+
+int SumDigits(int iNo)
+{
+    int iDigit = 0 ;
+    int iAddition = 0 ;
+
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+
+    while(iNo != 0 )
+    {
+        iDigit = iNo % 10 ;
+
+        iAddition = iAddition +iDigit;
+
+        iNo = iNo/10 ;
+    }
+
+    return iAddition;
+}
+
+
+float AverageDigits(int iNo)
+{
+    int iDigit =0 , iCount = 0 , iSum = 0 ;
+    float fAvg = 0.0f ;
+
+
+
+    if(iNo < 0)
+    {
+        iNo = -iNo ;
+    }
+
+    iSum = SumDigits(iNo);
+    iCount = CountDigits(iNo);
+    
+    fAvg =((float) iSum /(float) iCount) ;  
+
+    return fAvg;
+
+}
+
+int main()
+{
+    int iValue = 0 ;
+    float fRet = 0.0f ;
+
+    printf("Enter number: ");
+    scanf("%d",&iValue);
+
+    fRet = AverageDigits(iValue);
+    printf("Average of Digits : %.2f\n",fRet);  // 
+
+    return EXIT_SUCCESS;
+}
