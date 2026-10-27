@@ -1,7 +1,9 @@
 //Pallindrom
 // 8998
 // 70007
-// 12321
+
+
+// 12321            it is not Pallindrome
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -41,7 +43,7 @@ int main()
     {
         printf("Number is Not Pallindrome\n");
     }
-    
+
 
     
     return EXIT_SUCCESS;
