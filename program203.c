@@ -9,7 +9,6 @@ void Pattern(int iNO)
     int iCnt = 0 ;
     char ch = '\0';
 
-    ch = 'A';
 
     for(iCnt = 1,ch = 'A';iCnt <= iNO; iCnt ++,ch++)
     {
