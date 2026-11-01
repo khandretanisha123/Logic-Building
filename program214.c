@@ -2,15 +2,11 @@
     iRow = 4
     iCol = 4
 
-
     1   2   3   4
     1   2   3   4
     1   2   3   4
     1   2   3   4
     
-    
-
-
 */
 
 #include<stdio.h>
