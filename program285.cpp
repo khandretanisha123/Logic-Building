@@ -30,7 +30,7 @@ class Arithematic
 
 };
 
-Arithematic :: Arithematic(double A, double B)  // Constructor
+Arithematic :: (double A, double B)  // Constructor
 {
     No1 = A;
     No2 = B;

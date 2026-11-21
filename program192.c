@@ -1,7 +1,5 @@
-/*
-    Input :     4
-    Output :    A   B   C   D
-*/
+
+
 
 #include<stdio.h>
 #include<stdlib.h>

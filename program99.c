@@ -2,30 +2,32 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-void DisplayFactors(int iNo)
+typedef  unsigned long long ULONG;
+
+ULONG Factorial(int iNo)
 {
     int iCnt = 0 ;
-    printf("Factors of %d are : \n",iNo);
-    for(iCnt=1; iCnt<=iNo; iCnt++)
+    ULONG iFact = 0 ;   //
+    
+    for(iCnt = 1 , iFact = 1; iCnt<=iNo; iCnt++)
     {
-        if(iNo%iCnt == 0)
-        {
-            printf("%d\n",iCnt);
-        }
+        iFact = iFact*iCnt;
     }
+
+    return iFact ;
 }
 
 
 int main()
 {
     int iValue = 0;
+    ULONG iRet = 0 ;
 
     printf("Enter number:\n");
     scanf("%d", &iValue);
     
-    DisplayFactors(iValue);
-    
+    iRet=Factorial(iValue);
+    printf("Factorial is : %lld\n",iRet);
+
     return EXIT_SUCCESS;
 }
-
-// Time complexity : O(N)
