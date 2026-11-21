@@ -9,9 +9,7 @@ void Display(int *ptr)  // recevide in pointer
 
 int main()
 {
-    int Arr[5] = {10, 20 ,30 ,40 , 50}; //static array
-
-    printf("%d\n",Arr); // Address
+    int Arr[5] = {11, 21 ,51 ,101, 111}; //static array
 
     Display(Arr);     // Display(address);
 
