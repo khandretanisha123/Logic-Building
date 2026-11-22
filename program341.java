@@ -6,7 +6,7 @@ class program341
         int Arr[5] = {0};             // Not Allowed 
         int iCnt = 0 ;
 
-        Scanner  scanner = new Scanner(System.in);
+        
 
         
     }
