@@ -12,11 +12,18 @@ BOOL SearchElement(int Arr[],int  iLength, int iNo)
     {
         if(Arr[iCnt] == iNo)
         {
-            return true;
+           iCount++;
         }
     }
     
-    return false;
+    if(iCount > 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 int main()
