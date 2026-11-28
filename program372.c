@@ -4,6 +4,7 @@
 
 typedef int BOOL;
 
+// linera search algorithm
 BOOL SearchElement(int Arr[],int  iLength, int iNo)
 {
     int iCnt = 0;

@@ -9,7 +9,7 @@ BOOL SearchElement(int Arr[],int  iLength, int iNo)
     int iCnt = 0;
     bool bflag = false;
 
-    for(iCnt = 0; iCnt < iLength; iCnt++)
+    for(iCnt = iLength-1; iCnt >=0; iCnt--)
     {
         if(Arr[iCnt] == iNo)
         {
